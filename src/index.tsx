@@ -2,11 +2,18 @@ import { ActionPanel, Detail, Icon, List, PushAction } from "@raycast/api";
 import { useCallback, useState } from "react";
 import { Color, COLOR_LIST } from "./colors";
 
+const format = (s: string) => s.replace(/\s|-/g, "").toLocaleLowerCase();
+
 export default function Command() {
   const [colorList, setColorList] = useState(COLOR_LIST);
   const onSearchTextChange = useCallback((text: string) => {
+    const formattedText = format(text);
     const filteredList = COLOR_LIST.filter((item) => {
-      return item.id.includes(text) || item.value.includes(text) || item.name.includes(text);
+      return (
+        format(item.id).includes(formattedText) ||
+        format(item.value).includes(formattedText) ||
+        format(item.name).includes(formattedText)
+      );
     });
     setColorList(filteredList);
   }, []);
