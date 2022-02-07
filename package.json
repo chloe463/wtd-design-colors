@@ -9,7 +9,7 @@
   "commands": [
     {
       "name": "index",
-      "title": "Show List and Detail",
+      "title": "Show Color List and Detail",
       "description": "Show a list of Wantedly colors and a detail view",
       "mode": "view"
     }
