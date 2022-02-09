@@ -3,7 +3,7 @@
   "name": "wantedly-design-colors",
   "title": "Wantedly Design Colors",
   "description": "Search Wantedly design system colors",
-  "icon": "command-icon.png",
+  "icon": "wantedly-logo.png",
   "author": "chloe463",
   "license": "MIT",
   "commands": [
