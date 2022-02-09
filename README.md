@@ -1,6 +1,6 @@
 # Wantedly design colors - Raycast extension
 
-You can search wantedly design system color by color name or value.
+You can search [Wantedly design system](https://www.figma.com/community/file/994992887565225147/Wantedly-UI-Components) color by color name or value.
 
 
 ## Screenshots
